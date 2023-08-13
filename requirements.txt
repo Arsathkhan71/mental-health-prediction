@@ -1,0 +1,5 @@
+Flask==2.3.2
+pandas==2.0.1
+numpy==1.23.5
+pickleshare==0.7.5
+scikit-learn==1.2.2

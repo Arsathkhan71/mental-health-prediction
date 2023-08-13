@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Fitness Tracker</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .custom-img{
+            border-radius: 15px;
+        }
+
+        .custom-color{
+          color: black;
+        }
+
+        .nav-item:hover{
+            transform: scale(1.1);
+        }
+
+        
+        .hover-img:hover{
+            transform: scale(1.1);
+            
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <p class="text-center m-0"><b>MENTAL FITNESS TRACKER</b></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item m-2">
+                        <a  href="https://www.linkedin.com/in/arsath-khan/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin custom-color" viewBox="0 0 16 16">
+                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                          </a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a  href="https://github.com/Arsathkhan71">
+                            <svg style="color:black" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github custom-color" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a  href="mailto:mohammadarsathkhan71@gmail.com">
+                            <svg style="color:black" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope custom-color" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!--content part1-->
+
+    <div class="container">
+        <div class="row flex-wrap-reverse">
+            <div class="col-md-6 align-self-center">
+            <h2 class="text-left fs-1 ">MENTAL FITNESS TRACKER</h2>
+            <p class="text-capitalize fs-5">Welcome to the Mental Fitness Hub! We're an online platform focused on promoting mental well-being and improving your mental fitness. Using advanced machine learning techniques, we predict mental fitness rates and provide personalized recommendations for mental wellness activities.</p>
+            <!--<a href="#" class="btn btn-outline-primary me-2">Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>
+            </a>-->
+            <a href="https://www.linkedin.com/in/arsath-khan/" class="btn btn-outline-primary me-2">Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                </svg>
+            </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch justify-content-center hover-img scale-in-center">
+            <img src="/static/mental-fitness-2.png" 
+            class="img-thumbnail m-4 img-fluid border-0" alt="..."  width="100%">
+            </div>
+        </div>
+    </div>
+
+    <!--content part2-->
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 d-flex align-items-stretch justify-content-center hover-img scale-in-center">
+            <img src="/static/OIG.jpg" 
+            class="img-thumbnail m-4 img-fluid border-0 custom-img " alt="..."  width="80%">
+            </div>
+            <div class="col-md-6 align-self-center">
+            <h2 class="text-left fs-1 ">Mental Fitness Prediction</h2>
+            <p class="text-capitalize fs-5">Input your details, including year, prevalence rates of mental disorders, and location, to receive a predicted mental fitness rate. Gain insights into your mental well-being and understand your position on the mental fitness scale.</p>
+            <a href="/form" class="btn btn-outline-primary me-2">Predict
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                  </svg>
+            </a>
+            <!-- <a href="https://www.linkedin.com/in/arsath-khan/" class="btn btn-outline-primary me-2">Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                </svg>
+            </a> -->
+            </div>
+        </div>
+    </div>
+
+    <!--content part3-->
+
+    <div class="container">
+        <div class="row flex-wrap-reverse">
+            <div class="col-md-6 align-self-center">
+                <h2 class="text-left fs-1 ">Activity Recommendations</h2>
+                <p class="text-capitalize fs-5">These personalized activity recommendations are designed to align with an individual's predicted mental fitness level, offering diverse options to improve mental well-being and achieve a healthier work-life balance.</p>
+                <a href="/form" class="btn btn-outline-primary me-2">Get Recommendations
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                      </svg>
+                </a>
+                <!-- <a href="https://www.linkedin.com/in/arsath-khan/" class="btn btn-outline-primary me-2">Demo
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg>
+                </a> -->
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch justify-content-center hover-img scale-in-center">
+            <img src="/static/activity.jpg" 
+            class="img-thumbnail m-4 img-fluid border-0 custom-img" alt="..."  width="80%">
+            </div>
+        </div>
+    </div>
+
+    <!--faq-->
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="text-center m-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            What is Mental Fitness?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Mental fitness refers to a person's overall mental well-being and resilience. It encompasses factors such as emotional health, cognitive abilities, coping skills, and psychological strength.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            How is the Mental Fitness Rate Predicted?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            By leveraging a diverse dataset encompassing aspects such as Friuts and Veggies, Daily Stress, Places Visited and more, I set out to predict the work-life balance score. With this score in hand, we can then gauge the individual's mental fitness level, categorizing it as low, medium, or high. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            Are the activity recommendations personalized?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, the activity recommendations are personalized based on your predicted mental fitness rate. They are tailored to address specific areas of improvement and cater to your unique mental well-being needs.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            What types of activities are recommended?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our curated collection includes a variety of activities such as meditation techniques, mindfulness exercises, self-care routines, relaxation exercises, and other practices known to enhance mental well-being.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                            How can I get started on the Mental Fitness Tracker?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Simply navigate to our website and follow the prompts to input the required details. Once you receive your predicted mental fitness rate, you can explore personalized recommendations and start your journey towards improved mental well-being.
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Add more FAQ items following the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
