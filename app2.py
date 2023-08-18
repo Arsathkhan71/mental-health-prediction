@@ -9,10 +9,10 @@ app = Flask(__name__)
 model_path = 'C:/Users/Arsath khan/Internships/IBM SkillsBuild/frontend/model_LR.pkl'
 scaler_path = 'C:/Users/Arsath khan/Internships/IBM SkillsBuild/frontend/scaler_MFI_2.pkl'
 
-with open(model_path, 'rb') as f:
+with open('model_LR.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open(scaler_path, 'rb') as f:
+with open("scaler_MFI_2.pkl", 'rb') as f:
     scaler = pickle.load(f)
     
 # Generate a secret key
